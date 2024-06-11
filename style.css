@@ -1,0 +1,276 @@
+@import "css/fontNcolors.css";
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(---clr-darkest-blue);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.background-image-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    position: absolute;
+    z-index: -1;
+}
+
+#background-image{
+    width: 100%;
+    height: 50%;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.page-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-1{
+    width: 350px;
+    height: 200px;
+    background-color: var(---clr-dark-blue);
+    border-radius: 10px 100px 10px 10px;
+
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.fylo-logo{
+    width: 100%;
+}
+
+.action-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.doc-icon-container{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(---clr-darkest-blue);
+    border-radius: 12px;
+}
+
+.folder-icon-container{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(---clr-darkest-blue);
+    border-radius: 12px;
+}
+
+.upload-icon-container{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(---clr-darkest-blue);
+    border-radius: 12px;
+}
+
+.container-2{
+    width: 600px;
+    height: 155px;
+    background-color: var(---clr-dark-blue);
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.c2-content{
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.c2-content p{
+    color: var(---clr-gray-blue);
+    margin-top: 0;
+}
+
+.c2-content p span{
+    font-weight: bold;
+    color: var(---clr-pale-blue);
+}
+
+.c2-content .text-over-slide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-left{
+    width: 180px;
+    height: 95px;
+    background-color: #FFFFFF;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 100% 100%, 89% 75%, 33% 75%, 0 75%);
+    position: absolute;
+    margin: 0 0 100px 735px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-left p{
+    margin: 0 0 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.space-left p span{
+    font-size: 14px;
+    color: var(---clr-gray-blue);
+}
+
+.slide-background{
+    width: 100%;
+    height: 25px;
+
+    background-color: var(---clr-darkest-blue);
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.slide-container{
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.slide-progression-bar{
+    width: 75%;
+    height: 100%;
+    background-image: linear-gradient(var(---clr-gradient));
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.slide-wheel{
+    width: 12px;
+    height: 12px;
+
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.min-max{
+    display: flex;
+    justify-content: space-between;
+}
+
+.min-max p{
+    margin: 8px 0 0;
+    font-weight: bold;
+    color: var(---clr-pale-blue);
+}
+
+@media (max-width: 1000px) {
+    .background-image-container{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        transform: scale(2);
+
+        position: absolute;
+        z-index: -1;
+    }
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container-2{
+        width: 350px;
+    }
+
+    .c2-content p{
+        align-self: center;
+    }
+
+    .space-left{
+        margin-right: 750px;
+        margin-top: 500px;
+
+        width: 180px;
+        height: 65px;
+
+        background-color: #FFFFFF;
+        clip-path: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 12px;
+        position: absolute;
+    }
+
+    .space-left p{
+        margin: 0;
+    }
+}
